@@ -1,5 +1,9 @@
 import datetime as dt
 
+events = []
+
 with open('events.txt') as f:
     for line in f:
-        print(line)
+        events.append(line.strip().split(","))
+
+print(events)
